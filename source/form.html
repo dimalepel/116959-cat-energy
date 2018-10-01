@@ -10,10 +10,10 @@
       <div class="page-header__top">        
         <div class="page-header__active">
           <a href="" class="page-header__logo">
-            <img src="" alt="Логотип">
+            <img src="http://placehold.it/150x100" alt="Логотип">
           </a>
           <a href="" class="page-header__index-link">
-            <img src="" alt="Кот Энерджи">
+            <img src="http://placehold.it/150x100" alt="Кот Энерджи">
           </a>
           <button class="page-header__menu-toggle">
             <span class="page-header__menu-toggle-bar">Меню</span>
@@ -33,7 +33,7 @@
             <h1 class="promo__title">Функциональное питание для </h1>
             <p class="promo__motive">Занялся собой? Займись котом!</p>
           </div>
-          <img src="" alt="" class="promo__img">
+          <img src="http://placehold.it/150x100" alt="" class="promo__img">
           <a href="" class="promo__link">Подобрать программу</a>
         </div>
       </section>
@@ -41,22 +41,22 @@
     <main class="page-main">
       <section class="selection-programs">
         <h1 class="main__title">Подбор программы</h1>
-        <form action="" class="selection-programs__form form">
+        <form action="https://echo.htmlacademy.ru" class="selection-programs__form form">
           <p class="selection-programs__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <div class="form__item">
             <h2 class="form__item-title">Данные кота</h2>
             <ul class="options-list">
               <li class="options-list__item">
-                <label class="options-list__label" for="">Имя:*</label> 
-                <input class="options-list__input" name="" id="" placeholder="Барсик" required="" type="text">
+                <label class="options-list__label" for="cat-name">Имя:*</label> 
+                <input class="options-list__input" name="cat-name" id="cat-name" placeholder="Барсик" required="" type="text">
               </li>
               <li class="options-list__item">
-                <label class="options-list__label" for="">Вес (кг):*</label> 
-                <input class="options-list__input" name="" id="" placeholder="7" required="" type="text">
+                <label class="options-list__label" for="cat-weight">Вес (кг):*</label> 
+                <input class="options-list__input" name="cat-weight" id="cat-weight" placeholder="7" required="" type="text">
               </li>
               <li class="options-list__item">
-                <label class="options-list__label" for="">Возраст (лет):</label> 
-                <input class="options-list__input" name="" id="" placeholder="7" required="" type="text">
+                <label class="options-list__label" for="cat-age">Возраст (лет):</label> 
+                <input class="options-list__input" name="cat-age" id="cat-age" placeholder="7" required="" type="text">
               </li>
             </ul>
           </div>
@@ -64,16 +64,16 @@
             <h2 class="form__item-title">Выбор программы</h2>
             <ul class="options-list">
               <li class="options-list__item radio-field">
-                <input class="radio-field__input" name="" value="" id="" checked="checked" type="radio"> 
-                <label class="radio-field__label" for="">Похудение</label>
+                <input class="radio-field__input" name="sel-prog" value="" id="slim" checked="checked" type="radio"> 
+                <label class="radio-field__label" for="slim">Похудение</label>
               </li>
               <li class="options-list__item radio-field">
-                <input class="radio-field__input" name="" value="" id="" checked="checked" type="radio"> 
-                <label class="radio-field__label" for="">Набор массы</label>
+                <input class="radio-field__input" name="sel-prog" value="" id="weight" checked="checked" type="radio"> 
+                <label class="radio-field__label" for="weight">Набор массы</label>
               </li>
               <li class="options-list__item radio-field">
-                <input class="radio-field__input" name="" value="" id="" checked="checked" type="radio"> 
-                <label class="radio-field__label" for="">Не знаю (Нужен ваш совет)</label>
+                <input class="radio-field__input" name="sel-prog" value="" id="dont-now" checked="checked" type="radio"> 
+                <label class="radio-field__label" for="dont-now">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </div>
@@ -81,12 +81,12 @@
             <h2 class="form__item-title">Контактные данные (владельца кота)</h2>
             <ul class="options-list">
               <li class="options-list__item">
-                <label class="options-list__label" for="">E-mail:*</label> 
-                <input class="options-list__input" name="" id="" placeholder="kuklachev@gmail.com" required="" type="text">
+                <label class="options-list__label" for="mail">E-mail:*</label> 
+                <input class="options-list__input" name="mail" id="mail" placeholder="kuklachev@gmail.com" required="" type="text">
               </li>
               <li class="options-list__item">
-                <label class="options-list__label" for="">Телефон:*</label> 
-                <input class="options-list__input" name="" id="" placeholder="8 (960) 900-60-90" required="" type="text">
+                <label class="options-list__label" for="phone">Телефон:*</label> 
+                <input class="options-list__input" name="phone" id="phone" placeholder="8 (960) 900-60-90" required="" type="text">
               </li>
             </ul>
           </div>
@@ -94,8 +94,8 @@
             <h2 class="form__item-title">Комментарий</h2>
             <ul class="options-list">
               <li class="options-list__item">
-                <label class="options-list__label" for="owner-comment">Введите комментарий</label> 
-                <textarea class="options-list__input" name="" id="" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <label class="options-list__label" for="comment">Введите комментарий</label> 
+                <textarea class="options-list__input" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
               </li>
             </ul>
           </div>
@@ -103,20 +103,20 @@
             <h2 class="form__item-title">Дополнительно</h2>
             <ul class="options-list">
               <li class="options-list__item checkbox-field">
-                <input class="checkbox-field__input" name="" value="" id="" checked="checked" type="checkbox"> 
-                <label class="checkbox-field__label" for="">Похудение</label>
+                <input class="checkbox-field__input" name="sugar" value="" id="sugar" checked="checked" type="checkbox"> 
+                <label class="checkbox-field__label" for="sugar">Сахарозаменитель</label>
               </li>
               <li class="options-list__item checkbox-field">
-                <input class="checkbox-field__input" name="" value="" id="" checked="checked" type="checkbox"> 
-                <label class="checkbox-field__label" for="">Набор массы</label>
+                <input class="checkbox-field__input" name="water" value="" id="water" checked="checked" type="checkbox"> 
+                <label class="checkbox-field__label" for="water">Питьевая вода</label>
               </li>
               <li class="options-list__item checkbox-field">
-                <input class="checkbox-field__input" name="" value="" id="" checked="checked" type="checkbox"> 
-                <label class="checkbox-field__label" for="">Не знаю (Нужен ваш совет)</label>
+                <input class="checkbox-field__input" name="milk" value="" id="milk" checked="checked" type="checkbox"> 
+                <label class="checkbox-field__label" for="milk">Молоко</label>
               </li>
               <li class="options-list__item checkbox-field">
-                <input class="checkbox-field__input" name="" value="" id="" checked="checked" type="checkbox"> 
-                <label class="checkbox-field__label" for="">Не знаю (Нужен ваш совет)</label>
+                <input class="checkbox-field__input" name="vit" value="" id="vit" checked="checked" type="checkbox"> 
+                <label class="checkbox-field__label" for="vit">Витамины</label>
               </li>
             </ul>
           </div>
@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="contact__map">
-          <img src="" alt="Карта">
+          <img src="http://placehold.it/150x100" alt="Карта">
         </div>      
       </section>
     </main>
@@ -142,7 +142,7 @@
     <footer class="page-footer">
       <div class="container">
         <a href="" class="page-footer__index-link">
-          <img src="" alt="Кот Энерджи">
+          <img src="http://placehold.it/150x100" alt="Кот Энерджи">
         </a>
         <ul class="socials">
           <li class="socials__item">
@@ -164,7 +164,7 @@
         <div class="copyright">
           <p class="copyright__title">HTML Academy</p>
           <a href="" class="copyright__logo">
-            <img src="" alt="HTML Academy">
+            <img src="http://placehold.it/150x100" alt="HTML Academy">
           </a>
         </div>
       </div>
