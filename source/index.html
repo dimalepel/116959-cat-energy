@@ -2,39 +2,51 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-
+    <!-- .page-header -->
     <header class="page-header">
       <div class="page-header__top">
         <div class="page-header__active">
-          <a href="" class="page-header__logo">
-            <img src="http://placehold.it/150x100" alt="Логотип">
+          <a class="page-header__logo">
+            <img class="page-header__logo-img" src="img/icon-logo-mobile.svg" alt="Логотип" width="33">
           </a>
-          <a href="" class="page-header__index-link">
-            <img src="http://placehold.it/150x100" alt="Кот Энерджи">
+          <a class="page-header__index-link">
+            <img class="page-header__index-link-img" src="img/logo-mobile-header.svg" alt="Кот Энерджи" width="100">
           </a>
           <button class="page-header__menu-toggle">
-            <span class="page-header__menu-toggle-bar">Меню</span>
+            <div class="page-header__menu-toggle-bar">
+              <span class="visually-hidden">Меню</span>
+            </div>
           </button>
         </div>
+        <!-- .main-nav -->
         <nav class="main-nav">
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="">Главная</a></li>
-            <li class="main-nav__item"><a href="">Каталог продукции</a></li>
-            <li class="main-nav__item"><a href="">Подбор программы</a></li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link main-nav__item-link--current">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__item-link" href="#">Подбор программы</a>
+            </li>
           </ul>
         </nav>
       </div>
+      <!-- .promo -->
       <section class="page-header__promo promo">
         <div class="container">
           <div class="promo__text">
             <h1 class="promo__title">Функциональное питание для </h1>
             <p class="promo__motive">Занялся собой? Займись котом!</p>
           </div>
-          <img src="http://placehold.it/150x100" alt="" class="promo__img">
-          <a href="" class="promo__link">Подобрать программу</a>
+          <img class="promo__img" src="img/index-can-mobile@1x.png" alt="Cat Energy" >
+          <a href="#" class="button promo__link">Подобрать программу</a>
         </div>
       </section>
     </header>
@@ -42,7 +54,7 @@
       <!-- .programs -->
       <section class="programs">
         <div class="container">
-          <h2 class="">Программы питания</h2>
+          <h2 class="visually-hidden">Программы питания</h2>
           <ul class="programs__list">
             <li class="programs__item programs__item--slim">
               <div class="programs__inner">
@@ -67,16 +79,16 @@
           <h2 class="how-work__title">Как это работает</h2>
           <ul class="how-work__list">
             <li class="how-work__item how-work__item--nutrient">
-              <p>Функциональное питание содержит только полезные питательные вещества.</p>
+              <p class="how-work__description">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
             <li class="how-work__item how-work__item--form-release">
-              <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              <p class="how-work__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="how-work__item how-work__item--meal">
-              <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+              <p class="how-work__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="how-work__item how-work__item--time">
-              <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="how-work__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -102,7 +114,7 @@
             </div>
           </div>
           <div class="example__toggle">
-            <img class="example__image" src="http://placehold.it/150x100" alt="Образец">
+            <img class="example__image" src="img/before-mobile@1x.png" alt="Образец">
             <div class="example__active active">
               <span class="active__was">Было</span>
               <span class="active__become">Стало</span>
@@ -112,7 +124,7 @@
       </section>
       <!-- .contact -->
       <section class="contact">
-        <h2 class="">Карта</h2>
+        <h2 class="visually-hidden">Карта</h2>
         <div class="contact__info">
           <div class="container">
             <h2 class="contact__title">приглашаем к сотрудничеству дилеров!</h2>
@@ -120,37 +132,49 @@
           </div>
         </div>
         <div class="contact__map">
-          <img src="http://placehold.it/150x100" alt="Карта">
+          <img src="img/map.jpg" alt="Карта">
         </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="container">
-        <a href="" class="page-footer__index-link">
-          <img src="http://placehold.it/150x100" alt="Кот Энерджи">
+        <a class="page-footer__index-link" href="">
+          <img class="page-footer__logo" src="img/logo-mobile-header.svg" alt="Кот Энерджи" width="128">
         </a>
         <ul class="socials">
           <li class="socials__item">
-            <a href="">
-              <span class=""></span>
+            <a class="socials__item-link" href="">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="socials__item-ico socials__item-ico--vk" width="22" height="12">
+                <use xlink:href="img/icons-sprite.svg#icon-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a href="">
-              <span class=""></span>
+            <a class="socials__item-link" href="">
+              <span class="visually-hidden">Инстаграм</span>             
+              <svg class="socials__item-ico socials__item-ico--insta" width="16" height="16">
+                <use xlink:href="img/icons-sprite.svg#icon-insta"></use>
+              </svg>
             </a>
           </li>
           <li class="socials__item">
-            <a href="">
-              <span class=""></span>
+            <a class="socials__item-link" href="">
+              <span class="visually-hidden">Фэйсбук</span>
+              <svg class="socials__item-ico socials__item-ico--fb" width="10" height="19">
+                <use xlink:href="img/icons-sprite.svg#icon-fb"></use>
+              </svg>
             </a>
           </li>
         </ul>
+        <!-- .copyright -->
         <div class="copyright">
           <p class="copyright__title">HTML Academy</p>
-          <a href="" class="copyright__logo">
-            <img src="http://placehold.it/150x100" alt="HTML Academy">
+          <a href="" class="copyright__link">
+            <svg class="copyright__logo" width="27" height="34">
+              <use xlink:href="img/icons-sprite.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>

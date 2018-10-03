@@ -1,0 +1,49 @@
+.how-work__title {
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  font-weight: 400;
+}
+
+.how-work__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.how-work__item {
+
+  &::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  &--nutrient::before {
+    background-image: url(../img/advantage-leaf@1x.png);
+  }
+  
+  &--form-release::before {
+    background-image: url(../img/advantage-powder@1x.png);
+  }
+  
+  &--meal::before {
+    background-image: url(../img/advantage-dining@1x.png);
+  }
+  
+  &--time::before {
+    background-image: url(../img/advantage-clock@1x.png);
+  }
+}
+
+.how-work__description {
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+}
