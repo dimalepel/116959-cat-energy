@@ -16,19 +16,19 @@
     background-repeat: no-repeat;
     background-position: center;
   }
-  
+
   &--nutrient::before {
     background-image: url(../img/advantage-leaf@1x.png);
   }
-  
+
   &--form-release::before {
     background-image: url(../img/advantage-powder@1x.png);
   }
-  
+
   &--meal::before {
     background-image: url(../img/advantage-dining@1x.png);
   }
-  
+
   &--time::before {
     background-image: url(../img/advantage-clock@1x.png);
   }

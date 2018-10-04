@@ -34,21 +34,21 @@
   display: block;
   position: relative;
   background-color: #222222;
-  
+
   &::before,
   &::after {
     content: "";
     display: block;
     width: 24px;
     height: 2px;
-    position: absolute;    
+    position: absolute;
     background-color: #222222;
   }
-  
+
   &::before {
     top: 8px;
   }
-  
+
   &::after {
     top: -8px;
   }

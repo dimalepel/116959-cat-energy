@@ -1,6 +1,6 @@
 .checkbox-field__input {
   @include visually-hidden;
-  
+
   &:checked ~ .checkbox-field__label::after {
     content: "";
     position: absolute;
@@ -20,7 +20,7 @@
   line-height: 18px;
   color: #222222;
   text-transform: uppercase;
-  
+
   &::before {
     content: "";
     position: absolute;

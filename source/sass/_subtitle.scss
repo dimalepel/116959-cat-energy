@@ -4,11 +4,11 @@
   vertical-align: baseline;
   padding-right: 20px;
   background-color: #fff;
-  
+
   &--desc {
     display: block;
   }
-  
+
   &.subtitle::after {
     content: "";
     position: absolute;
