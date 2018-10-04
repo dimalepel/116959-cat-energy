@@ -1,5 +1,6 @@
 body {
   font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
 }
 
 .button {
@@ -27,4 +28,12 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+.page-main {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.page-main__title {
+  border-bottom: 1px solid #e6e6e6;
 }

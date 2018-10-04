@@ -1,0 +1,32 @@
+.form__item {
+  padding: 20px;
+  
+  &--akcent {    
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.form__item-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  color: #111111;
+}
+
+.form__submit {
+  border: 0;
+  width: calc(100% - 40px);
+  margin: 15px auto 0 auto;
+  padding: 11px 0;
+}
+
+.form__required-desc {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  color: #444444;
+  text-align: center;
+}
