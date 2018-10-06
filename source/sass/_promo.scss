@@ -1,4 +1,5 @@
 .promo {
+  margin-bottom: 22px;
   background-color: #64a83b;
   background-image: linear-gradient(to bottom, transparent 305px, #ffffff 305px),
     url("../img/index-background-mobile@1x.jpg");
@@ -8,6 +9,7 @@
 
 .promo__text {
   text-align: center;
+  padding-top: 27px;
 }
 
 .promo__title {
@@ -19,6 +21,8 @@
 }
 
 .promo__motive {
+  margin-top: 24px;
+  margin-bottom: 27px;
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
@@ -28,4 +32,10 @@
   display: block;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 3px;
+}
+
+.promo__link {
+  padding-top: 11px;
+  padding-bottom: 11px;
 }

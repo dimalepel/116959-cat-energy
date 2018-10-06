@@ -2,6 +2,10 @@
   padding-top: 14px;
   padding-bottom: 17px;
   border-bottom: 1px solid #e6e6e6;
+  
+  &:first-child {
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .featured-item__link {
@@ -11,7 +15,7 @@
 
 .featured-item__title {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
   font-size: 16px;
   line-height: 1;
   text-transform: uppercase;

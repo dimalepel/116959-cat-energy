@@ -4,8 +4,13 @@
   list-style: none;
 }
 
+.catalog__section-title {
+  padding-top: 16px;
+  padding-bottom: 26px;
+}
+
 .catalog__item {
-  padding: 25px 20px;
+  padding: 0 20px 22px 20px;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -17,6 +22,10 @@
 .catalog__link {
   width: 50%;
   flex: 1 0 auto;
+}
+
+.catalog__content {
+  margin: 20px 0;
 }
 
 .catalog__title {
@@ -52,9 +61,23 @@
 .catalog__show {
   padding: 25px 20px;
   border-bottom: 1px solid #e6e6e6;
+  
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+  }
 }
 
 .catalog__show-title {
+  margin-top: 25px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -63,6 +86,8 @@
 }
 
 .catalog__more-desc {
+  margin-top: 7px;
+  margin-bottom: 21px;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
