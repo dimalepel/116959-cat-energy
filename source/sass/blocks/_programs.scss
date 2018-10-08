@@ -32,7 +32,7 @@
     width: 370px;
   }
 
-  &::before{
+  &::before {
     content: "";
     position: absolute;
     top: -6px;
@@ -63,7 +63,7 @@
     left: 11px;
     width: 35px;
     height: 49px;
-    background-image: url(../img/icon-cat-slim.svg);
+    background-image: url("../img/icon-cat-slim.svg");
 
     @media (min-width: $tablet-width) {
       width: 140px;
@@ -79,7 +79,7 @@
     left: -7px;
     width: 67px;
     height: 28px;
-    background-image: url(../img/icon-cat-pro.svg);
+    background-image: url("../img/icon-cat-pro.svg");
 
     @media (min-width: $tablet-width) {
       width: 268px;
@@ -141,12 +141,12 @@
     right: -34px;
     width: 24px;
     height: 11px;
-    background-image: url(../img/icon-right-arrow-verylong.svg);
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     background-position: center;
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
-      background-image: url(../img/icon-right-arrow-long.svg);
+      background-image: url("../img/icon-right-arrow-long.svg");
     }
   }
 }
