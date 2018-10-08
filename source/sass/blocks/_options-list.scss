@@ -63,7 +63,7 @@
     width: 100%;
     box-sizing: border-box;
     resize: none;
-    
+
     @media (min-width: $tablet-width) {
       min-height: 173px;
     }
@@ -87,7 +87,7 @@
   &--mail {
     top: 15px;
     right: 15px;
-    
+
     @media (min-width: $tablet-width) {
       top: 19px;
     }
@@ -96,7 +96,7 @@
   &--phone {
     top: 12px;
     right: 12px;
-    
+
     @media (min-width: $tablet-width) {
       top: 15px;
     }

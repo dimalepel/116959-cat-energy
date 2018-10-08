@@ -72,7 +72,7 @@
 
   &::after {
     position: absolute;
-    counter-increment: section; 
+    counter-increment: section;
     content: counter(section);
     top: 0;
     right: 78px;

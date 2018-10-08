@@ -44,7 +44,7 @@
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
-  
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     color: #111111;
@@ -56,13 +56,13 @@
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3px;
-  
+
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 239px;
     left: 50%;
     width: 709px;
-    height: 609px;    
+    height: 609px;
     margin-left: -354px;
     z-index: -1;
   }
