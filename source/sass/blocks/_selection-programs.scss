@@ -1,0 +1,28 @@
+.selection-programs__form {
+  margin-right: -20px;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+
+.selection-programs__title {
+  margin-top: 15px;
+}
+
+.selection-programs__desc {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #111111;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 340px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

@@ -3,13 +3,23 @@
   display: inline-block;
   vertical-align: baseline;
   padding-right: 20px;
+  margin-top: 8px;
+  margin-bottom: 35px;
   background-color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 37px;
+    padding-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   &--desc {
     display: block;
   }
 
-  &.subtitle::after {
+  &::after,
+  &::before {
     content: "";
     position: absolute;
     top: 0;
@@ -18,5 +28,10 @@
     margin-top: calc(1em / 2 + 3px);
     background-color: #68b738;
     z-index: -1;
+  }
+
+  &::before {
+    display: block;
+    right: 100%;
   }
 }

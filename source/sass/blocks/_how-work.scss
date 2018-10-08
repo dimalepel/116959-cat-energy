@@ -1,0 +1,98 @@
+.how-work {
+  margin-bottom: 43px;
+}
+
+.how-work__title {
+  margin-top: 17px;
+  margin-bottom: 28px;
+}
+
+.how-work__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.how-work__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: block;
+    width: 46%;
+    min-height: 230px;
+    margin: 44px 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet-width) {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &--nutrient::before {
+    background-image: url("../img/advantage-leaf@1x.png");
+  }
+
+  &--form-release::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--meal::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--time::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
+
+  &::after {
+    position: absolute;
+    counter-increment: section;
+    content: counter(section);
+    top: 0;
+    right: 78px;
+    z-index: -1;
+    font-size: 281px;
+    color: #f2f2f2;
+    line-height: 1;
+  }
+}
+
+.how-work__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", sans-serif;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
