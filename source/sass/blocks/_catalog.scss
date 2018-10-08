@@ -2,7 +2,7 @@
   width: auto;
   padding-right: 0;
   padding-left: 0;
-  
+
   @media (min-width: $tablet-width) {
     width: 708px;
     padding-right: 30px;
@@ -14,7 +14,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -32,8 +32,8 @@
 .catalog__item {
   padding: 0 20px 22px 20px;
   border-bottom: 1px solid #e6e6e6;
-  
-  @media (min-width: $tablet-width) {    
+
+  @media (min-width: $tablet-width) {
     width: calc(50% - 30px);
     padding: 0 40px 40px 40px;
     margin: 30px 0;
@@ -46,7 +46,7 @@
 .catalog__inner {
   display: flex;
   align-items: center;
-  
+
   @media (min-width: $tablet-width) {
     flex-direction: column;
   }
@@ -56,7 +56,7 @@
   width: 50%;
   display: flex;
   flex-shrink: 0;
-  
+
   @media (min-width: $tablet-width) {
     width: 100%;
     min-height: 208px;
@@ -67,7 +67,7 @@
 
 .catalog__content {
   margin: 20px 0;
-  
+
   @media (min-width: $tablet-width) {
     width: 100%;
   }
@@ -82,7 +82,7 @@
   color: #111111;
   font-weight: 400;
   text-transform: uppercase;
-  
+
   @media (min-width: $tablet-width) {
     max-width: 55%;
     margin-right: auto;
@@ -98,7 +98,7 @@
   font-family: "Arial", sans-serif;
   line-height: 16px;
   color: #444444;
-  
+
   @media (min-width: $tablet-width) {
     border-collapse: collapse;
   }
@@ -108,13 +108,12 @@
   &:nth-child(2n) {
     text-align: right;
   }
-  
+
   @media (min-width: $tablet-width) {
     padding: 8px 0;
     font-size: 16px;
     border-bottom: 1px solid #cdcdcd;
   }
-  
 }
 
 .catalog__order {

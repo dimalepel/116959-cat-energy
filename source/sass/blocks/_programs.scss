@@ -8,11 +8,11 @@
   padding: 20px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
-  
+
   &:last-child {
     margin-bottom: 0;
   }
-  
+
   @media (min-width: $tablet-width) {
     min-height: 330px;
     display: flex;
@@ -23,7 +23,7 @@
 
 .programs__inner {
   position: relative;
-  
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
     justify-content: center;
     width: 370px;
   }
-  
+
   &::before{
     content: "";
     position: absolute;
@@ -41,7 +41,7 @@
     height: 50px;
     background-color: #68b738;
     border-radius: 50%;
-    
+
     @media (min-width: $tablet-width) {
       width: 200px;
       height: 200px;
@@ -50,21 +50,21 @@
       left: auto;
     }
   }
-  
+
   &::after {
     content: "";
     position: absolute;
     background-position: center;
     background-repeat: no-repeat;
   }
-  
+
   &--slim::after {
     top: -8px;
     left: 11px;
     width: 35px;
     height: 49px;
     background-image: url(../img/icon-cat-slim.svg);
-    
+
     @media (min-width: $tablet-width) {
       width: 140px;
       height: 196px;
@@ -73,14 +73,14 @@
       right: -194px;
     }
   }
-  
+
   &--pro::after {
     top: 5px;
     left: -7px;
     width: 67px;
     height: 28px;
     background-image: url(../img/icon-cat-pro.svg);
-    
+
     @media (min-width: $tablet-width) {
       width: 268px;
       height: 112px;
@@ -113,7 +113,7 @@
   line-height: 18px;
   color: #444444;
   border-bottom: 1px solid #d9d9d9;
-  
+
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
@@ -129,11 +129,11 @@
   color: #111111;
   text-transform: uppercase;
   text-decoration: none;
-  
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
   }
-  
+
   &::after {
     content: "";
     position: absolute;
@@ -144,7 +144,7 @@
     background-image: url(../img/icon-right-arrow-verylong.svg);
     background-position: center;
     background-repeat: no-repeat;
-    
+
     @media (min-width: $tablet-width) {
       background-image: url(../img/icon-right-arrow-long.svg);
     }

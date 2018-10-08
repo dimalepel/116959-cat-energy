@@ -1,6 +1,6 @@
 .page-header__top {
   background-color: #ffffff;
-  
+
   @media (min-width: $tablet-width) {
     display: flex;
     padding-right: 30px;
@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #e6e6e6;
-  
+
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
     padding: 24px 0 24px 0;     
@@ -46,7 +46,7 @@
   padding: 0;
   background: transparent;
   border: none;
-  
+
   @media (min-width: $tablet-width) {
     display: none;
   }

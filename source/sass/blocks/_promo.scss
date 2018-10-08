@@ -5,7 +5,7 @@
     url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center, top center;
-  
+
   @media (min-width: $tablet-width) {
     position: relative;
     padding-bottom: 583px;
@@ -17,7 +17,7 @@
 .promo__text {
   text-align: center;
   padding-top: 27px;
-  
+
   @media (min-width: $tablet-width) {
     width: 426px;
     margin-left: 89px;
@@ -31,7 +31,7 @@
   font-weight: 400;
   color: #ffffff;
   line-height: 1;
-  
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     color: #111111;
@@ -71,7 +71,7 @@
 .promo__link {
   padding-top: 11px;
   padding-bottom: 11px;
-  
+
   @media (min-width: $tablet-width) {
     display: inline-block;
     padding-right: 56px;

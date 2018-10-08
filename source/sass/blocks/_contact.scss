@@ -9,7 +9,7 @@
   color: #111111;
   font-weight: 400;
   text-transform: uppercase;
-  
+
   @media (min-width: $tablet-width) {
     width: 170px;
     margin-left: 40px;
@@ -24,7 +24,7 @@
   &--grey {
     background-color: #f2f2f2;
   }
-  
+
   @media (min-width: $tablet-width) {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -44,11 +44,11 @@
   font-family: "Arial", sans-serif;
   line-height: 20px;
   color: #444444;
-  
+
   @media (min-width: $tablet-width) {
     width: 160px;
     margin-right: 40px;
-    text-align: right;    
+    text-align: right;
     font-size: 16px;
   }
 }
