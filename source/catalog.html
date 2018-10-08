@@ -27,10 +27,10 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link--current">Главная</a>
+              <a class="main-nav__item-link">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="#">Каталог продукции</a>
+              <a class="main-nav__item-link main-nav__item-link--current" href="#">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="#">Подбор программы</a>
@@ -41,9 +41,9 @@
     </header>
     <main class="page-main">
       <!-- .catalog -->
-      <section class="catalog">
+      <section class="catalog page-main__catalog">
         <!-- .section-title -->
-        <h1 class="page-main__title container catalog__section-title section-title">Каталог продукции</h1>
+        <h1 class="page-main__title catalog__section-title section-title">Каталог продукции</h1>
         <ul class="catalog__list">
           <li class="catalog__item">
             <div class="catalog__inner">
@@ -220,17 +220,19 @@
             </div>
             <a href="" class="button catalog__order">Заказать</a>
           </li>
-        </ul>
-        <div class="catalog__show">
-          <p class="catalog__show-title">Показать еще 100500 товаров</p>
-          <p class="catalog__more-desc">На самом деле вкусов гораздо больше!</p>
-          <a href="" class="catalog__show-link" >Показать все</a>
-        </div>
+          <li class="catalog__item show-more">
+            <div class="show-more__inner">              
+              <p class="show-more__title">Показать еще 100500 товаров</p>
+              <p class="show-more__desc">На самом деле вкусов гораздо больше!</p>
+              <a href="" class="show-more__link" >Показать все</a>
+            </div>
+          </li>       
+       </ul>        
       </section>
       <!-- .featured -->
       <section class="featured">
         <div class="container">
-          <h2 class="featured__title">Дополнительные товары</h2>
+          <h2 class="featured__title subtitle">Дополнительные товары</h2>
           <ul class="featured__list">
             <!-- .featured-item -->
             <li class="featured__item featured-item">
@@ -275,20 +277,21 @@
             </li>
           </ul>
           <div class="featured__banner">
-            <div class="featured__banner-overlay">
+            <a href="" class="featured__banner-overlay">
               <p class="featured__text">Закажите все и получите чехол для кота в подарок!</p>
-            </div>
-            <img src="img/gift-photo-mobile@1x.jpg" alt="" class="featured__banner-picture">
+            </a>
+            <!--<img src="img/gift-photo-mobile@1x.jpg" alt="" class="featured__banner-picture">-->
+            <img src="img/gift-photo-tablet@1x.jpg" alt="" class="featured__banner-picture">
           </div>
         </div>
       </section>
       <!-- .contact -->
       <section class="contact">
         <h2 class="visually-hidden">Карта</h2>
-        <div class="contact__info contact__info--grey">
+        <div class="contact__info">
           <div class="container contact__wrapper">
             <h2 class="contact__title">приглашаем к сотрудничеству дилеров!</h2>
-            <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="contact__address">ул. Большая Конюшенная, д. 19/8 <span class="contact__address-city">Санкт-Петербург</span></p>
           </div>
         </div>
         <div class="contact__map">
@@ -298,7 +301,7 @@
     </main>
     <!-- .page-footer -->
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__wrapper">
         <a class="page-footer__index-link" href="">
           <img class="page-footer__logo" src="img/logo-mobile-header.svg" alt="Кот Энерджи" width="128">
         </a>

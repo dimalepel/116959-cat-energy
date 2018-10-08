@@ -1,0 +1,125 @@
+.page-main__catalog {
+  width: auto;
+  padding-right: 0;
+  padding-left: 0;
+  
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.catalog__section-title {
+  padding-top: 16px;
+  padding-bottom: 26px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.catalog__item {
+  padding: 0 20px 22px 20px;
+  border-bottom: 1px solid #e6e6e6;
+  
+  @media (min-width: $tablet-width) {    
+    width: calc(50% - 30px);
+    padding: 0 40px 40px 40px;
+    margin: 30px 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(to bottom, #ffffff 82px, #f2f2f2 82px);
+    border: 0;
+  }
+}
+
+.catalog__inner {
+  display: flex;
+  align-items: center;
+  
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
+}
+
+.catalog__link {
+  width: 50%;
+  display: flex;
+  flex-shrink: 0;
+  
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    min-height: 208px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+}
+
+.catalog__content {
+  margin: 20px 0;
+  
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.catalog__title {
+  max-width: 70%;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  font-weight: 400;
+  text-transform: uppercase;
+  
+  @media (min-width: $tablet-width) {
+    max-width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.catalog__table {
+  width: 100%;
+  font-size: 12px;
+  font-family: "Arial", sans-serif;
+  line-height: 16px;
+  color: #444444;
+  
+  @media (min-width: $tablet-width) {
+    border-collapse: collapse;
+  }
+}
+
+.catalog__cell {
+  &:nth-child(2n) {
+    text-align: right;
+  }
+  
+  @media (min-width: $tablet-width) {
+    padding: 8px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  
+}
+
+.catalog__order {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+}

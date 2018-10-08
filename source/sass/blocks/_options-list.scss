@@ -2,6 +2,13 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  
+  @media (min-width: $tablet-width) {
+    &--checkbox {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .options-list__item {
@@ -12,6 +19,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+  
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .options-list__label {
@@ -21,6 +32,10 @@
   color: #222222;
   text-transform: uppercase;
   white-space: nowrap;
+  
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .options-list__input {
@@ -48,6 +63,16 @@
     width: 100%;
     box-sizing: border-box;
     resize: none;
+    
+    @media (min-width: $tablet-width) {
+      min-height: 173px;
+    }
+  }
+  
+  @media (min-width: $tablet-width) {
+    padding: 10px 15px;
+    font-size: 20px;
+    line-height: 1;
   }
 }
 
@@ -62,10 +87,18 @@
   &--mail {
     top: 15px;
     right: 15px;
+    
+    @media (min-width: $tablet-width) {
+      top: 19px;
+    }
   }
 
   &--phone {
     top: 12px;
     right: 12px;
+    
+    @media (min-width: $tablet-width) {
+      top: 15px;
+    }
   }
 }

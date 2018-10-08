@@ -1,6 +1,12 @@
 .example {
   padding-top: 15px;
   background-color: #f2f2f2;
+  
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #e6e6e6;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #f2f2f2 463px, #ffffff 463px);
+  }
 }
 
 .example__container {
@@ -18,6 +24,18 @@
   line-height: 18px;
   font-family: "Arial", sans-serif;
   color: #444444;
+  
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.example__statistics {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .example__list {
@@ -26,10 +44,23 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  
+  @media (min-width: $tablet-width) {
+    margin-right: auto;
+  }
 }
 
 .example__statistics-item {
   width: calc(50% - 15px);
+  
+  @media (min-width: $tablet-width) {
+    width: 162px;
+    text-align: center;
+    
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
 }
 
 .example__statistics-value {
@@ -41,6 +72,11 @@
   text-transform: uppercase;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__statistics-desc {
@@ -55,6 +91,14 @@
   text-align: center;
   background-color: #f2f2f2;
   transform: translateY(-9px);
+  
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 14px;
+    transform: translateY(-13px)
+  }
 }
 
 .example__coast {
@@ -65,6 +109,20 @@
   color: #111111;
   text-transform: uppercase;
   text-align: center;
+  
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    text-align: right;
+  }
+}
+
+.example__coast-value {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 10px;
+  }
 }
 
 .example__toggle {

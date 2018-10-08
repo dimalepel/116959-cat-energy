@@ -3,6 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__title {
@@ -12,6 +16,10 @@
   letter-spacing: 1px;
   color: #444444;
   line-height: 1;
+  
+  @media (min-width: $tablet-width) {
+    margin-right: 23px;
+  }
 }
 
 .copyright__logo {

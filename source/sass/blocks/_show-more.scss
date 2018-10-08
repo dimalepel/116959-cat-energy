@@ -1,0 +1,93 @@
+.show-more {
+  padding: 25px 20px;
+  border-bottom: 1px solid #e6e6e6;  
+  
+  @media (min-width: $tablet-width) {
+    display: flex;
+    border-bottom: 0;
+    padding: 82px 0 0 0;
+    background: #fff;    
+  }
+}
+
+.show-more__inner {
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    
+    @media (min-width: $tablet-width) {
+      width: 60px;
+      height: 60px;
+      margin-top: 10px;
+      margin-bottom: 48px;
+      background-image: url("../img/icon-plus.svg");
+    }
+  }
+  
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    border: 1px solid #e6e6e6;
+  }
+}
+
+.show-more__title {
+  margin-top: 25px;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #111111;
+  text-transform: uppercase;
+  
+  @media (min-width: $tablet-width) {
+    max-width: 138px;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.show-more__desc {
+  margin-top: 7px;
+  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #444444;
+  font-family: "Arial", sans-serif;
+  
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
+    font-size: 16px;
+    max-width: 170px;   
+  }
+}
+
+.show-more__link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+    width: 100%;
+  }
+}

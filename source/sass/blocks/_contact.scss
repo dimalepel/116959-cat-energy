@@ -1,0 +1,67 @@
+.contact {
+  background-color: #ffffff;
+}
+
+.contact__title {
+  margin: 0 23px 0 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  font-weight: 400;
+  text-transform: uppercase;
+  
+  @media (min-width: $tablet-width) {
+    width: 170px;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.contact__info {
+  padding: 28px 0 26px 0;
+  
+  &--grey {
+    background-color: #f2f2f2;
+  }
+  
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f2f2f2;
+  }
+}
+
+.contact__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact__address {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+  line-height: 20px;
+  color: #444444;
+  
+  @media (min-width: $tablet-width) {
+    width: 160px;
+    margin-right: 40px;
+    text-align: right;    
+    font-size: 16px;
+  }
+}
+
+.contact__address-city {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+.contact__map {
+  img {
+    display: block;
+  }
+}
