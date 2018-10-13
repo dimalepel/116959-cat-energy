@@ -36,6 +36,10 @@
     margin: 44px 0;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 20%;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -71,15 +75,21 @@
   }
 
   &::after {
-    position: absolute;
-    counter-increment: section;
-    content: counter(section);
-    top: 0;
-    right: 78px;
-    z-index: -1;
-    font-size: 281px;
-    color: #f2f2f2;
-    line-height: 1;
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      counter-increment: section;
+      content: counter(section);
+      top: 0;
+      right: 78px;
+      z-index: -1;
+      font-size: 281px;
+      color: #f2f2f2;
+      line-height: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
+    }
   }
 }
 

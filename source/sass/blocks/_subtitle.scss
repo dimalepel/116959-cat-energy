@@ -30,8 +30,10 @@
     z-index: -1;
   }
 
-  &::before {
-    display: block;
-    right: 100%;
+  @media (min-width: $tablet-width) {
+    &::before {
+      display: block;
+      right: 100%;
+    }
   }
 }

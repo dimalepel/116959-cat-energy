@@ -8,7 +8,7 @@
   </head>
   <body>
     <!-- .page-header -->
-    <header class="page-header">
+    <header class="page-header page-header--index">
       <div class="page-header__top">
         <div class="page-header__active">
           <a class="page-header__logo">
@@ -113,11 +113,25 @@
               <p class="example__coast">Затраты на питание: <span class="example__coast-value">15 000 руб.</span></p>
             </div>
           </div>
-          <div class="example__toggle">
-            <img class="example__image" src="img/before-mobile@1x.png" alt="Образец">
-            <div class="example__active active">
-              <span class="active__was">Было</span>
-              <span class="active__become">Стало</span>
+          <!-- .switch -->
+          <div class="example__switch switch">
+            <input class="switch__input switch__input--before" type="radio" id="example-input-before" name="example-input">
+            <input class="switch__input switch__input--after" type="radio" id="example-input-after" name="example-input">
+            <div class="switch__items">
+              <div class="switch__item switch__item--before">
+                <img class="switch__img" src="img/before-mobile@1x.png" alt="До">
+              </div>
+              <div class="switch__item switch__item--after">
+                <img class="switch__img" src="img/after-mobile@1x.png" alt="После">
+              </div>
+            </div>
+            <div class="switch__control">
+              <label class="switch__label switch__label--before" for="example-input-before">Было</label>
+              <div class="switch__range">
+                <div class="switch__scale"></div>
+                <button class="switch__button" type="button">До/После</button>
+              </div>
+              <label class="switch__label switch__label--after" for="example-input-after">Стало</label>
             </div>
           </div>
         </div>
