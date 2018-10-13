@@ -1,0 +1,27 @@
+.page-footer {
+  padding-top: 40px;
+  background-color: #f2f2f2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 58px;
+  }
+}
+
+.page-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.page-footer__index-link {
+  display: block;
+  margin-bottom: 30px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}

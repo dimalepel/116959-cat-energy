@@ -27,13 +27,13 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__item-link main-nav__item-link--current">Главная</a>
+              <a class="main-nav__item-link" href="#">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__item-link" href="#">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__item-link" href="#">Подбор программы</a>
+              <a class="main-nav__item-link main-nav__item-link--current" >Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +45,7 @@
         <h1 class="selection-programs__title section-title">Подбор программы</h1>
         <!-- .form -->
         <form action="https://echo.htmlacademy.ru" class="selection-programs__form form">
-          <p class="container selection-programs__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <p class="selection-programs__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
           <div class="form__item">
             <h2 class="visually-hidden">Данные кота</h2>
             <!-- .options-list -->
@@ -107,16 +107,16 @@
               </li>
             </ul>
           </div>
-          <div class="form__item">
+          <div class="form__item form__item--none-padding">
             <h2 class="subtitle form__item-title">Комментарий</h2>
             <div class="options-list__item">
               <label class="visually-hidden options-list__label" for="comment">Введите комментарий</label>
               <textarea class="options-list__input options-list__input--textarea" name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
-          <div class="form__item">
+          <div class="form__item form__item--none-padding">
             <h2 class="subtitle form__item-title">Дополнительно</h2>
-            <ul class="options-list">
+            <ul class="options-list options-list--checkbox">
               <!-- .checkbox-field -->
               <li class="options-list__item checkbox-field">
                 <input class="checkbox-field__input" name="sugar" value="" id="sugar" checked="checked" type="checkbox">
@@ -136,17 +136,19 @@
               </li>
             </ul>
           </div>
-          <button class="button form__submit" type="submit">Отправить заявку</button>
-          <p class="form__required-desc">* — Обязательные поля</p>
+          <div class="form__item form__item-buttons">
+            <button class="button form__submit" type="submit">Отправить заявку</button>
+            <p class="form__required-desc">* — Обязательные поля</p>
+          </div>
         </form>
       </section>
       <!-- .contact -->
       <section class="contact">
         <h2 class="visually-hidden">Карта</h2>
         <div class="contact__info">
-          <div class="container">
+          <div class="container contact__wrapper">
             <h2 class="contact__title">приглашаем к сотрудничеству дилеров!</h2>
-            <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            <p class="contact__address">ул. Большая Конюшенная, д. 19/8 <span class="contact__address-city">Санкт-Петербург</span></p>
           </div>
         </div>
         <div class="contact__map">
@@ -156,7 +158,7 @@
     </main>
     <!-- .page-footer -->
     <footer class="page-footer">
-      <div class="container">
+      <div class="container page-footer__wrapper">
         <a class="page-footer__index-link" href="">
           <img class="page-footer__logo" src="img/logo-mobile-header.svg" alt="Кот Энерджи" width="128">
         </a>
