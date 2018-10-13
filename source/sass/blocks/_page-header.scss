@@ -1,12 +1,43 @@
-.page-header__top {
-  background-color: #ffffff;
+.page-header {
+  @media (min-width: $desktop-width) {
+    padding-top: 55px;
+    margin-bottom: 80px;
+    min-height: 641px;  
+  
+    &--index {
+      position: relative;
+      
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        bottom: 0;
+        z-index: -1;
+        width: 50%;
+        background-color: #65a93c;
+        background-image: url("../img/index-background-desktop@1x.jpg");
+        background-position: top left;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
 
+.page-header__top {
   @media (min-width: $tablet-width) {
     display: flex;
     padding-right: 30px;
     padding-left: 30px;
     width: 708px;
     margin: 0 auto;
+  }
+  
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -22,6 +53,10 @@
     padding: 24px 0 24px 0;
     margin-right: auto;
     border-bottom: 0;
+  }
+  
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
