@@ -66,17 +66,17 @@
 
 .switch__input {
   @include visually-hidden;
-  
+
   &--before:checked ~ .switch__items .switch__item--before,
   &--after:checked ~ .switch__items .switch__item--after {
     display: block;
   }
-  
+
   &--before:checked ~ .switch__items .switch__item--after,
   &--after:checked ~ .switch__items .switch__item--before {
     display: none;
   }
-  
+
   @media (max-width: $phones-max-width) {
     &--before:checked ~ .switch__control .switch__button {
       left: 5px;

@@ -2,11 +2,11 @@
   @media (min-width: $desktop-width) {
     padding-top: 55px;
     margin-bottom: 80px;
-    min-height: 641px;  
-  
+    min-height: 641px;
+
     &--index {
       position: relative;
-      
+
       &::before {
         content: "";
         display: block;
@@ -33,7 +33,7 @@
     width: 708px;
     margin: 0 auto;
   }
-  
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     padding-left: 40px;
@@ -54,7 +54,7 @@
     margin-right: auto;
     border-bottom: 0;
   }
-  
+
   @media (min-width: $desktop-width) {
     padding: 0;
   }
