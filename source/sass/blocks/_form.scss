@@ -27,7 +27,7 @@
 
     @media (min-width: $tablet-width) {
       margin: 42px 40px 38px 40px;
-      padding: 23px 25px 25px 28px;   
+      padding: 23px 25px 25px 28px;
       border-right: 1px solid #ededed;
       border-left: 1px solid #ededed;
     }
@@ -42,15 +42,15 @@
   &--owner-cat {
     @media (min-width: $desktop-width) {
       width: 100%;
-      
+
       & .options-list {
         display: flex;
         justify-content: space-between;
       }
-      
+
       & .options-list__item {
         width: calc(50% - 40px);
-        
+
         &:first-child {
           margin-bottom: 0;
         }

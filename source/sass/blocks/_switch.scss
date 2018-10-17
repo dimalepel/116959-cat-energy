@@ -67,10 +67,10 @@
       transition: all 0.3s ease;
     }
   }
-  
+
   &--after {
     display: none;
-    
+
     @media (min-width: $tablet-width) {
       display: block;
     }
@@ -151,7 +151,7 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
-  
+
   @media (min-width: $tablet-width) {
     height: 6px;
     background-color: #dcdcdc;
@@ -215,7 +215,7 @@
     &--after:checked ~ .switch__control .switch__button {
       left: calc(100% - 40px);
     }
-    
+
     &--before:checked ~ .switch__items .switch__item--before,
     &--after:checked ~ .switch__items .switch__item--after {
       display: block;
