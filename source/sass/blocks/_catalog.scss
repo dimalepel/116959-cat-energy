@@ -8,6 +8,13 @@
     padding-right: 30px;
     padding-left: 30px;
   }
+  
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
 }
 
 .catalog__list {
@@ -20,13 +27,28 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+  
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+  }
 }
 
 .catalog__section-title {
-  padding-top: 16px;
-  padding-bottom: 26px;
-  padding-right: 20px;
-  padding-left: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 16px 20px 26px 20px;
+  border-bottom: 1px solid #e6e6e6;
+  
+  @media (min-width: $tablet-width) {
+    padding-top: 33px;
+    margin-bottom: 24px;
+    padding-left: 0;
+    border: 0;
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .catalog__item {
@@ -35,17 +57,26 @@
 
   @media (min-width: $tablet-width) {
     width: calc(50% - 30px);
-    padding: 0 40px 40px 40px;
+    padding: 0 0 40px 0;
     margin: 30px 0;
     box-sizing: border-box;
     background-image: linear-gradient(to bottom, #ffffff 82px, #f2f2f2 82px);
     border: 0;
   }
+  
+  @media (min-width: $desktop-width) {
+    width: calc((100% - 80px*3)/4);
+    margin-right: 80px;
+    
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .catalog__inner {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -59,6 +90,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-bottom: 14px;
     min-height: 208px;
     align-items: flex-end;
     justify-content: center;
@@ -66,17 +98,20 @@
 }
 
 .catalog__content {
-  margin: 20px 0;
+  margin: 22px 0 20px 0;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-bottom: 34px;
+    width: calc(100% - 80px);
   }
 }
 
 .catalog__title {
   max-width: 70%;
   margin-top: 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-size: 16px;
   line-height: 20px;
   color: #111111;
@@ -87,8 +122,14 @@
     max-width: 55%;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 20px;
     font-size: 20px;
     text-align: center;
+  }
+  
+  @media (min-width: $desktop-width) {
+    max-width: 95%;
+    margin-bottom: 18px;
   }
 }
 
@@ -96,8 +137,9 @@
   width: 100%;
   font-size: 12px;
   font-family: "Arial", sans-serif;
-  line-height: 16px;
+  line-height: 14px;
   color: #444444;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     border-collapse: collapse;
@@ -121,4 +163,9 @@
   padding-bottom: 10px;
   font-size: 16px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 40px;
+    margin-left: 40px;
+  }
 }

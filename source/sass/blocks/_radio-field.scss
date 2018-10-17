@@ -1,3 +1,9 @@
+.radio-field {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
+}
+
 .radio-field__input {
   @include visually-hidden;
 

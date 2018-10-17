@@ -1,5 +1,9 @@
 .how-work {
   margin-bottom: 43px;
+  
+  @media (min-width: $tablet-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .how-work__title {
@@ -54,7 +58,7 @@
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
-      margin-bottom: 40px;
+      margin-bottom: 33px;
     }
   }
 
@@ -79,7 +83,7 @@
       position: absolute;
       counter-increment: section;
       content: counter(section);
-      top: 0;
+      top: -40px;
       right: 78px;
       z-index: -1;
       font-size: 281px;

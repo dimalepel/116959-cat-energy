@@ -26,7 +26,7 @@
       width: 60px;
       height: 60px;
       margin-top: 10px;
-      margin-bottom: 48px;
+      margin-bottom: 26px;
       background-image: url("../img/icon-plus.svg");
     }
   }
@@ -39,6 +39,11 @@
     width: 100%;
     padding: 40px;
     border: 1px solid #e6e6e6;
+  }
+  
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 
@@ -71,6 +76,10 @@
     margin-bottom: auto;
     font-size: 16px;
     max-width: 170px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    line-height: 20px;
   }
 }
 

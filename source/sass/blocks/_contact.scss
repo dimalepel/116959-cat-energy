@@ -1,5 +1,15 @@
 .contact {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
+  
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+  
+  &--index {
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+    }
+  }
 }
 
 .contact__title {
@@ -16,19 +26,22 @@
     font-size: 20px;
     line-height: 25px;
   }
+  
+  @media (min-width: $desktop-width) {
+    margin-left: 76px;
+  }
 }
 
 .contact__info {
-  padding: 28px 0 26px 0;
-
-  &--grey {
-    background-color: #f2f2f2;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #f2f2f2;
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+    
+    & .container {
+      height: 0;
+    }
   }
 }
 
@@ -36,6 +49,17 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 28px 0 26px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
+    padding-bottom: 58px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    background-color: #fff;
+  }
 }
 
 .contact__address {
@@ -51,6 +75,11 @@
     text-align: right;
     font-size: 16px;
   }
+  
+  @media (min-width: $desktop-width) {
+    margin-right: 84px;
+    text-align: left;
+  }
 }
 
 .contact__address-city {
@@ -61,7 +90,30 @@
 }
 
 .contact__map {
-  img {
-    display: block;
+  height: 362px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  @media (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+    background-image: url("../img/bg-map-mobile@2x.png");
+  }
+  
+  @media (min-width: $tablet-width) {
+    height: 400px;
+    background-image: url("../img/bg-map-tablet@1x.png");
+    
+    @media (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/bg-map-desktop@1x.png");
+    
+    @media (min-resolution: 144dpi),(min-resolution: 1.5dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }

@@ -1,16 +1,96 @@
 .switch {
   position: relative;
   padding-bottom: 36px;
+  
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    padding-bottom: 65px;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 50%;
+      bottom: 0;
+      width: 100vw;
+      transform: translateX(-50%);
+      background-image: linear-gradient(to bottom,#fff,#fff 169px,#f2f2f2 169px,#f2f2f2);
+      transition: all 0.3s ease;
+      
+      @media (min-width: $desktop-width) {
+        display: none;
+      }
+    }
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-top: -227px;
+  }
 }
 
 .switch__items {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
+  
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: auto;
+      bottom: 0;
+      width: 100vw;
+      background-image: linear-gradient(to bottom, #fff, #fff 169px, #eaeaea 169px, #eaeaea);
+    }
+  }
 }
 
 .switch__item {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 1;
+    
+    &--before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 2;
+      width: 50%;
+      overflow: hidden;
+      background-image: linear-gradient(to bottom, #ffffff, #ffffff 169px, #f2f2f2 169px, #f2f2f2);
+      transition: all 0.3s ease;
+    }
+  }
+  
   &--after {
     display: none;
+    
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }  
+}
+
+.switch__img {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 240px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media (min-width: $tablet-width) {
+    width: 690px;
+    max-width: 690px;
+    height: 517px;
+    margin-right: 0;
+    margin-left: 7px;
   }
 }
 
@@ -30,6 +110,22 @@
   color: #111111;
   user-select: none;
   cursor: pointer;
+  
+  @media (max-width: $phones-max-width) {
+    &--before {
+      transform: translateX(2px);
+    }
+    
+    &--after {
+      transform: translateX(2px);
+    }
+  }
+  
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    padding: 7px 0 6px;
+    border-bottom: 1px dotted rgba(0, 0, 0, .23);
+  }
 }
 
 .switch__range {
@@ -37,14 +133,30 @@
   display: block;
   width: 84px;
   margin: 3px 18px;
+  
+  @media (max-width: $phones-max-width) {
+    transform: translateX(3px);
+  }
+  
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    margin: 0 21px 0 23px;
+    padding: 15px 0 13px;
+  }
 }
 
 .switch__scale {
   display: block;
-  height: 14px;
+  height: 12px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
+  
+  @media (min-width: $tablet-width) {
+    height: 6px;
+    background-color: #dcdcdc;
+    border: 0;
+  }
 }
 
 .switch__button {
@@ -61,21 +173,39 @@
   border-radius: 3px;
   text-indent: -1000px;
   overflow: hidden;
-  transition: all 0.3s ease;
+  
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 50%;
+    left: 50%;
+    margin-top: -16px;
+    margin-left: -17px;
+    background-color: #fff;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
+    cursor: pointer;
+    
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      display: block;
+      width: 8px;
+      height: 8px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+  }
 }
 
 .switch__input {
   @include visually-hidden;
-
-  &--before:checked ~ .switch__items .switch__item--before,
-  &--after:checked ~ .switch__items .switch__item--after {
-    display: block;
-  }
-
-  &--before:checked ~ .switch__items .switch__item--after,
-  &--after:checked ~ .switch__items .switch__item--before {
-    display: none;
-  }
 
   @media (max-width: $phones-max-width) {
     &--before:checked ~ .switch__control .switch__button {
@@ -84,6 +214,34 @@
 
     &--after:checked ~ .switch__control .switch__button {
       left: calc(100% - 40px);
+    }
+    
+    &--before:checked ~ .switch__items .switch__item--before,
+    &--after:checked ~ .switch__items .switch__item--after {
+      display: block;
+    }
+
+    &--before:checked ~ .switch__items .switch__item--after,
+    &--after:checked ~ .switch__items .switch__item--before {
+      display: none;
+    }
+  }
+  
+  @media (min-width: $tablet-width) {
+    &--before:checked ~ .switch__control .switch__button {
+      left: 17px;
+    }
+
+    &--before:checked ~ .switch__items .switch__item--before {
+      width: 100%;
+    }
+
+    &--after:checked ~ .switch__control .switch__button {
+      left: calc(100% - 17px);
+    }
+
+    &--after:checked ~ .switch__items .switch__item--before {
+      width: 0;
     }
   }
 }
