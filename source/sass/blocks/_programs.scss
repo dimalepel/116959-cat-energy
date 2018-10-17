@@ -1,3 +1,13 @@
+.programs {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 72px;
+  }
+}
+
 .programs__list {
   padding: 0;
   margin: 0;
@@ -20,8 +30,9 @@
 
   @media (min-width: $tablet-width) {
     min-height: 330px;
+    margin-bottom: 33px;
     display: flex;
-    padding-left: 50px;
+    padding-left: 51px;
     padding-right: 60px;
   }
 
@@ -41,8 +52,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    width: 370px;
+    justify-content: flex-start;
+    width: 372px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,7 +75,7 @@
       width: 200px;
       height: 200px;
       top: 72px;
-      right: -228px;
+      right: -223px;
       left: auto;
     }
 
@@ -107,27 +118,39 @@
     }
   }
 
-  &--pro::after {
-    top: 5px;
-    left: -7px;
-    width: 67px;
-    height: 28px;
-    background-image: url("../img/icon-cat-pro.svg");
+  &--pro {
+    & .programs__description {
+      @media (min-width: $tablet-width) {
+        max-width: 340px;
+      }
 
-    @media (min-width: $tablet-width) {
-      width: 268px;
-      height: 112px;
-      top: 116px;
-      left: auto;
-      right: -260px;
+      @media (min-width: $desktop-width) {
+        max-width: 100%;
+      }
     }
 
-    @media (min-width: $desktop-width) {
-      width: 134px;
-      height: 56px;
-      top: 22px;
-      left: -19px;
-      right: auto;
+    &::after {
+      top: 5px;
+      left: -7px;
+      width: 67px;
+      height: 28px;
+      background-image: url("../img/icon-cat-pro.svg");
+
+      @media (min-width: $tablet-width) {
+        width: 268px;
+        height: 112px;
+        top: 116px;
+        left: auto;
+        right: -260px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 56px;
+        top: 22px;
+        left: -19px;
+        right: auto;
+      }
     }
   }
 }
@@ -141,12 +164,14 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    margin-top: 56px;
+    margin-bottom: 9px;
     margin-left: 0;
     font-size: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 32px 0 32px 163px;
+    margin: 29px 0 35px 163px;
   }
 }
 
@@ -160,6 +185,7 @@
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
     font-size: 16px;
     line-height: 24px;
     border-bottom: 0;
@@ -167,6 +193,8 @@
 
   @media (min-width: $desktop-width) {
     padding-bottom: 0;
+    margin-top: 40px;
+    margin-bottom: 30px;
   }
 }
 
@@ -196,6 +224,8 @@
 
     @media (min-width: $tablet-width) {
       background-image: url("../img/icon-right-arrow-long.svg");
+      top: 4px;
+      right: -49px;
     }
 
     @media (min-width: $desktop-width) {
