@@ -15,7 +15,7 @@ if (menuToggle) {
 // Яндекс-карта
 ymaps.ready(init);
 var myMap, myPlacemark, phoneImageSize, phoneImageOffset, clientWidth, centerMap, zoomMap;
-function init(){  
+function init(){
   clientWidth = document.documentElement.clientWidth;
   if(clientWidth < 768) {
     centerMap = [59.938778, 30.323197];
@@ -32,8 +32,8 @@ function init(){
     centerMap = [59.938818, 30.315597];
     zoomMap = 16;
   }
-  myMap = new ymaps.Map("map", {        
-    center: centerMap,        
+  myMap = new ymaps.Map("map", {
+    center: centerMap,
     zoom: zoomMap,
     controls: []
   });

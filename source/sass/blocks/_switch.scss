@@ -1,11 +1,11 @@
 .switch {
   position: relative;
   padding-bottom: 36px;
-  
+
   @media (min-width: $tablet-width) {
     width: 690px;
     padding-bottom: 65px;
-    
+
     &::before {
       content: "";
       position: absolute;
@@ -17,13 +17,13 @@
       transform: translateX(-50%);
       background-image: linear-gradient(to bottom,#fff,#fff 169px,#f2f2f2 169px,#f2f2f2);
       transition: all 0.3s ease;
-      
+
       @media (min-width: $desktop-width) {
         display: none;
       }
     }
   }
-  
+
   @media (min-width: $desktop-width) {
     margin-top: -227px;
   }
@@ -32,12 +32,12 @@
 .switch__items {
   width: 100%;
   margin-bottom: 32px;
-  
+
   @media (min-width: $tablet-width) {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 14px;
-    
+
     &::after {
       content: "";
       position: absolute;
@@ -55,7 +55,7 @@
   @media (min-width: $tablet-width) {
     position: relative;
     z-index: 1;
-    
+
     &--before {
       position: absolute;
       top: 0;
@@ -74,7 +74,7 @@
     @media (min-width: $tablet-width) {
       display: block;
     }
-  }  
+  }
 }
 
 .switch__img {
@@ -84,7 +84,7 @@
   height: 240px;
   margin-left: auto;
   margin-right: auto;
-  
+
   @media (min-width: $tablet-width) {
     width: 690px;
     max-width: 690px;
@@ -110,17 +110,17 @@
   color: #111111;
   user-select: none;
   cursor: pointer;
-  
+
   @media (max-width: $phones-max-width) {
     &--before {
       transform: translateX(2px);
     }
-    
+
     &--after {
       transform: translateX(2px);
     }
   }
-  
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     padding: 7px 0 6px;
@@ -133,11 +133,11 @@
   display: block;
   width: 84px;
   margin: 3px 18px;
-  
+
   @media (max-width: $phones-max-width) {
     transform: translateX(3px);
   }
-  
+
   @media (min-width: $tablet-width) {
     width: 428px;
     margin: 0 21px 0 23px;
@@ -173,7 +173,7 @@
   border-radius: 3px;
   text-indent: -1000px;
   overflow: hidden;
-  
+
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
@@ -188,7 +188,7 @@
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.15);
     cursor: pointer;
-    
+
     &::before {
       content: "";
       position: absolute;
@@ -226,7 +226,7 @@
       display: none;
     }
   }
-  
+
   @media (min-width: $tablet-width) {
     &--before:checked ~ .switch__control .switch__button {
       left: 17px;

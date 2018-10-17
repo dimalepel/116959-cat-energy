@@ -25,7 +25,7 @@
     font-size: 36px;
     line-height: 36px;
   }
-  
+
   @media (min-width: $desktop-width) {
     margin-top: 47px;
     padding-left: 0;
@@ -40,7 +40,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 65px;
   }
-  
+
   @media (min-width: $desktop-width) {    
     flex-grow: 1;
     margin-right: 80px;
@@ -55,7 +55,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 76px;
   }
-  
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
@@ -78,7 +78,7 @@
     padding-left: 90px;
     padding-right: 115px;
   }
-  
+
   @media (min-width: $desktop-width) {
     flex-direction: column;
     padding: 68px 35px 46px 35px;
@@ -117,7 +117,7 @@
     max-width: 170px;
     text-align: left;
   }
-  
+
   @media (min-width: $desktop-width) {
     text-align: center;
   }

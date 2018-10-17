@@ -31,28 +31,26 @@
     &--main-nav-closed .main-nav {
       display: none;
     }
-    
+
     &--main-nav-opened .main-nav {
       display: block;
     }
-    
+
     &--main-nav-opened .page-header__menu-toggle-bar {
       background-color: transparent;
-      
+
       &::after {
         top: 0;
         transform: rotate(-45deg);
       }
-    
+
       &::before {
         top: 0;
         transform: rotate(45deg);
       }
     }
   }
-  
-  
-  
+
   @media (min-width: $tablet-width) {
     display: flex;
     padding-right: 30px;
@@ -103,7 +101,7 @@
   padding: 0;
   background: transparent;
   border: none;
-  
+
   &--hidden {
     display: none;
   }
