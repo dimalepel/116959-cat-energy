@@ -232,4 +232,21 @@
       top: 5px;
     }
   }
+  
+  &:hover::after {
+    width: 33px;
+    right: -57px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+  
+  &:active {
+    opacity: 0.3;
+    
+    &::after {
+      width: 33px;
+      right: -57px;
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      opacity: 0.3;
+    }
+  }
 }

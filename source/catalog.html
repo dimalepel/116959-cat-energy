@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=488efd0f-9d36-4af1-bd51-96e5b65aac65&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <!-- .page-header -->
@@ -395,16 +394,19 @@
           </li>
         </ul>
         <!-- .copyright -->
-        <div class="copyright">
-          <p class="copyright__title">HTML Academy</p>
-          <a href="" class="copyright__link">
-            <svg class="copyright__logo" width="27" height="34">
-              <use xlink:href="img/icons-sprite.svg#logo-htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
+        <!-- .copyright -->
+        <a href="" class="copyright">
+          <p class="copyright__title">HTML Academy</p>       
+          <svg class="copyright__logo" width="27" height="34">
+            <use xlink:href="img/icons-sprite.svg#logo-htmlacademy"></use>
+          </svg>       
+        </a>
       </div>
     </footer>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody();</script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=488efd0f-9d36-4af1-bd51-96e5b65aac65&lang=ru_RU" type="text/javascript"></script>
+    <script src="js/picturefill.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
