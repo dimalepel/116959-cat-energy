@@ -26,7 +26,7 @@
       width: 60px;
       height: 60px;
       margin-top: 10px;
-      margin-bottom: 48px;
+      margin-bottom: 26px;
       background-image: url("../img/icon-plus.svg");
     }
   }
@@ -39,6 +39,11 @@
     width: 100%;
     padding: 40px;
     border: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 35px;
+    padding-left: 35px;
   }
 }
 
@@ -72,6 +77,10 @@
     font-size: 16px;
     max-width: 170px;
   }
+
+  @media (min-width: $desktop-width) {
+    line-height: 20px;
+  }
 }
 
 .show-more__link {
@@ -89,5 +98,14 @@
   @media (min-width: $tablet-width) {
     margin-top: auto;
     width: 100%;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: rgba(68, 68, 68, 0.3);
   }
 }

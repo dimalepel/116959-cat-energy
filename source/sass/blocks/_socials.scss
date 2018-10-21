@@ -2,20 +2,24 @@
   padding: 16px 0;
   margin: 0;
   list-style: none;
-  text-align: center;
+  display: flex;
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
+    margin-top: -8px;
     padding: 0;
     border: 0;
   }
 }
 
 .socials__item {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 10px;
+  margin: 0 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 8px;
+    margin-left: 8px;
+  }
 }
 
 .socials__item-link {
@@ -61,5 +65,9 @@
 
   &:hover {
     fill: #68b738;
+  }
+
+  &:active {
+    fill: rgba(104, 183, 56, 0.3);
   }
 }

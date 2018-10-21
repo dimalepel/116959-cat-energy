@@ -17,6 +17,16 @@ body {
   text-align: center;
   text-decoration: none;
   background-color: #68b738;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .container {
@@ -49,7 +59,7 @@ img {
 
 .page-main {
   max-width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .page-main__title {

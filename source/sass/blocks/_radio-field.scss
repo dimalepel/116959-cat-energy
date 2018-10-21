@@ -1,21 +1,38 @@
+.radio-field {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 13px;
+  }
+}
+
 .radio-field__input {
   @include visually-hidden;
 
-  &:checked ~ .radio-field__label::after {
-    content: "";
-    position: absolute;
-    top: 9px;
-    left: 9px;
-    width: 12px;
-    height: 12px;
-    background-color: #68b738;
-    border-radius: 50%;
+  &:checked ~ .radio-field__label {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: 9px;
+      width: 12px;
+      height: 12px;
+      background-color: #68b738;
+      border-radius: 50%;
 
-    @media (min-width: $tablet-width) {
-      height: 18px;
-      width: 18px;
-      top: 11px;
-      left: 11px;
+      @media (min-width: $tablet-width) {
+        height: 18px;
+        width: 18px;
+        top: 11px;
+        left: 11px;
+      }
+    }
+
+    &:hover::after {
+      background-color: #68b738;
+      border-color: rgba(186, 186, 186, 0.3);
+    }
+
+    &:active::after {
+      opacity: 0.3;
     }
   }
 }
@@ -47,6 +64,18 @@
     @media (min-width: $tablet-width) {
       height: 38px;
       width: 38px;
+    }
+  }
+
+  &:hover::before {
+    border-color: #bababa;
+  }
+
+  &:active {
+    color: rgba(34, 34, 34, 0.3);
+
+    &::before {
+      border-color: rgba(186, 186, 186, 0.3);
     }
   }
 }

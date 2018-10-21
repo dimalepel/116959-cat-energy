@@ -3,9 +3,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-decoration: none;
 
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  &:hover .copyright__logo {
+    fill: #68b738;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    & .copyright__logo {
+      fill: #68b738;
+    }
   }
 }
 
