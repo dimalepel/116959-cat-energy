@@ -27,7 +27,7 @@ gulp.task("copy", function () {
       "source/js/**"
     ], {
       base: "source"
-    })    
+    })
     .pipe(gulp.dest("build"));
 });
 
@@ -76,7 +76,7 @@ gulp.task("images", function () {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
       imagemin.svgo()
-    ]))  
+    ]))
     .pipe(gulp.dest("source/img"));
 });
 
