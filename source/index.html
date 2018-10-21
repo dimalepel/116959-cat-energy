@@ -1,12 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=488efd0f-9d36-4af1-bd51-96e5b65aac65&lang=ru_RU" type="text/javascript"></script>
-  </head>
+  <include src="source/blocks/head.html"></include>
   <body>
     <!-- .page-header -->
     <header class="page-header page-header--index">
@@ -130,7 +124,7 @@
             <div class="switch__items">
               <div class="switch__item switch__item--before">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before@1x.webp, img/before@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
 
                   <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
@@ -139,7 +133,7 @@
               </div>
               <div class="switch__item switch__item--after">
                 <picture>
-                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after@1x.webp, img/after@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
                   <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
 
                   <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
@@ -172,49 +166,7 @@
         <div id="map" class="contact__map"></div>
       </section>
     </main>
-    <!-- .page-footer -->
-    <footer class="page-footer">
-      <div class="container page-footer__wrapper">
-        <a class="page-footer__index-link">
-          <img class="page-footer__logo" src="img/logo-footer.svg" alt="Кот Энерджи" width="128">
-        </a>
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__item-link" href="">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="socials__item-ico socials__item-ico--vk" width="22" height="12">
-                <use xlink:href="img/icons-sprite.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__item-link" href="">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="socials__item-ico socials__item-ico--insta" width="16" height="16">
-                <use xlink:href="img/icons-sprite.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__item-link" href="">
-              <span class="visually-hidden">Фэйсбук</span>
-              <svg class="socials__item-ico socials__item-ico--fb" width="10" height="19">
-                <use xlink:href="img/icons-sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <!-- .copyright -->
-        <div class="copyright">
-          <p class="copyright__title">HTML Academy</p>
-          <a href="" class="copyright__link">
-            <svg class="copyright__logo" width="27" height="34">
-              <use xlink:href="img/icons-sprite.svg#logo-htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
-      </div>
-    </footer>
-    <script src="js/script.js"></script>
+    <include src="source/blocks/page-footer.html"></include>
+    <include src="source/blocks/scripts.html"></include>
   </body>
 </html>

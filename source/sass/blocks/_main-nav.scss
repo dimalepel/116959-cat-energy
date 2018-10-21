@@ -38,6 +38,14 @@
   text-align: center;
   text-decoration: none;
 
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     padding-bottom: 11px;
