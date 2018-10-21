@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
+  <include src="source/blocks/head.html"></include>
   <body>
     <!-- .page-header -->
     <header class="page-header page-header--index">
@@ -171,51 +166,7 @@
         <div id="map" class="contact__map"></div>
       </section>
     </main>
-    <!-- .page-footer -->
-    <footer class="page-footer">
-      <div class="container page-footer__wrapper">
-        <a class="page-footer__index-link">
-          <img class="page-footer__logo" src="img/logo-footer.svg" alt="Кот Энерджи" width="128">
-        </a>
-        <ul class="socials">
-          <li class="socials__item">
-            <a class="socials__item-link" href="">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="socials__item-ico socials__item-ico--vk" width="22" height="12">
-                <use xlink:href="img/icons-sprite.svg#icon-vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__item-link" href="">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="socials__item-ico socials__item-ico--insta" width="16" height="16">
-                <use xlink:href="img/icons-sprite.svg#icon-insta"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__item-link" href="">
-              <span class="visually-hidden">Фэйсбук</span>
-              <svg class="socials__item-ico socials__item-ico--fb" width="10" height="19">
-                <use xlink:href="img/icons-sprite.svg#icon-fb"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-        <!-- .copyright -->
-        <a href="" class="copyright">
-          <p class="copyright__title">HTML Academy</p>       
-          <svg class="copyright__logo" width="27" height="34">
-            <use xlink:href="img/icons-sprite.svg#logo-htmlacademy"></use>
-          </svg>       
-        </a>
-      </div>
-    </footer>
-    <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody();</script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=488efd0f-9d36-4af1-bd51-96e5b65aac65&lang=ru_RU" type="text/javascript"></script>
-    <script src="js/picturefill.js"></script>
-    <script src="js/script.js"></script>
+    <include src="source/blocks/page-footer.html"></include>
+    <include src="source/blocks/scripts.html"></include>
   </body>
 </html>
