@@ -95,6 +95,10 @@
       right: 0;
     }
   }
+  
+  &--nutrient::after {
+    right: 96px;
+  }
 }
 
 .how-work__description {

@@ -1,0 +1,27 @@
+.page-main {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.page-main__title {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.page-main__catalog {
+  width: auto;
+  padding-right: 0;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+  }
+}

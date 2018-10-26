@@ -1,7 +1,10 @@
 @import "_normalize.scss";
 @import "_variables.scss";
 @import "_mixins.scss";
-@import "blocks/_page.scss";
+@import "_global.scss";
+@import "blocks/_button.scss";
+@import "blocks/_container.scss";
+@import "blocks/_page-main.scss";
 @import "blocks/_section-title.scss";
 @import "blocks/_subtitle.scss";
 @import "blocks/_fonts.scss";

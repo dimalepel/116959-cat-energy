@@ -1,0 +1,18 @@
+body {
+  min-width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    counter-reset: section;
+  }
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
