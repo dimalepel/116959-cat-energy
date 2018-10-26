@@ -44,6 +44,7 @@
 .options-list__input {
   flex-grow: 1;
   width: 50%;
+  height: 44px;
   padding: 12px 15px;
   font-family: inherit;
   font-size: 16px;
@@ -51,6 +52,7 @@
   color: #222222;
   text-transform: uppercase;
   border: 1px solid rgba(205, 205, 205, 0.5);
+  box-sizing: border-box;
 
   @include placeholder(#444444);
 
@@ -58,6 +60,7 @@
     padding: 10px 15px 10px 19px;
     font-size: 20px;
     line-height: 1;
+    height: 52px;
   }
 
   &--mail,
