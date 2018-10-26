@@ -27,7 +27,7 @@
 
     @media (min-width: $tablet-width) {
       margin: 42px 40px 38px 40px;
-      padding: 23px 25px 25px 28px;
+      padding: 25px 25px 23px 28px;
       border-right: 1px solid #ededed;
       border-left: 1px solid #ededed;
     }
@@ -60,6 +60,10 @@
 
   &--other {
     padding-top: 2px;
+    
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+    }
     
     @media (min-width: $desktop-width) {
       width: 100%;

@@ -55,7 +55,7 @@
   @include placeholder(#444444);
 
   @media (min-width: $tablet-width) {
-    padding: 15px 15px 14px 19px;
+    padding: 10px 15px 10px 19px;
     font-size: 20px;
     line-height: 1;
   }
@@ -84,7 +84,7 @@
 
     @media (min-width: $tablet-width) {
       min-height: 173px;
-      padding: 14px 15px 14px 19px;
+      padding: 16px 15px 14px 19px;
     }
   }
 
@@ -118,6 +118,11 @@
     @media (min-width: $tablet-width) {
       top: 19px;
     }
+    
+    @media (min-width: $desktop-width) {
+      right: 19px;
+      top: 21px;
+    }
   }
 
   &--phone {
@@ -126,6 +131,11 @@
 
     @media (min-width: $tablet-width) {
       top: 15px;
+    }
+    
+    @media (min-width: $desktop-width) {
+      right: 19px;
+      top: 17px;
     }
   }
 }

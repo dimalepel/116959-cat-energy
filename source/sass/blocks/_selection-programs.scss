@@ -1,6 +1,10 @@
 .selection-programs {
   @media (min-width: $tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 70px;
+  }
+  
+  @media (min-width: $desktop-width) {
+    margin-bottom: 79px;
   }
 }
 

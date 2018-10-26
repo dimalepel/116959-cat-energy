@@ -6,6 +6,10 @@
     padding-top: 58px;
     padding-bottom: 58px;
   }
+  
+  @media (min-width: $desktop-width) {
+    padding-top: 66px;
+  }
 }
 
 .page-footer__wrapper {
