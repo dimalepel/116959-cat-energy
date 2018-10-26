@@ -116,18 +116,18 @@
 .catalog__title-link {
   text-decoration: none;
   color: #111111;
-  
+
   &:hover {
     opacity: 0.6;
   }
-  
+
   &:active {
     opacity: 0.3;
   }
 }
 
 .catalog__table {
-  width: 100%;  
+  width: 100%;
   border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
@@ -141,16 +141,16 @@
   font-family: "Arial", sans-serif;
   line-height: 16px;
   color: #444444;
-  
+
   @media (min-width: $tablet-width) {
     padding: 8px 0 7px 0;
     font-size: 16px;
     border-bottom: 1px solid #cdcdcd;
   }
-  
+
   &:nth-child(2n) {
     text-align: right;
-  }  
+  }
 }
 
 .catalog__order {

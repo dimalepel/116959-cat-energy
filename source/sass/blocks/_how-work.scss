@@ -95,10 +95,10 @@
       right: 0;
     }
   }
-  
+
   &--nutrient::after {
     right: 96px;
-    
+
     @media (min-width: $desktop-width) {
       right: 16px;
     }

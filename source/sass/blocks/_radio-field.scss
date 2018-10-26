@@ -35,7 +35,7 @@
       opacity: 0.3;
     }
   }
-  
+
   &:focus ~ .radio-field__label {
     &::before {
       outline:  1px solid #a5c7fe;

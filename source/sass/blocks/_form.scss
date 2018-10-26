@@ -60,11 +60,11 @@
 
   &--other {
     padding-top: 2px;
-    
+
     @media (min-width: $tablet-width) {
       padding-top: 30px;
     }
-    
+
     @media (min-width: $desktop-width) {
       width: 100%;
     }

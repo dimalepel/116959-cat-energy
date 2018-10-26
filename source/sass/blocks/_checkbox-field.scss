@@ -1,6 +1,6 @@
 .checkbox-field {
   margin-bottom: 12px;
-  
+
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
     padding: 18px 0;
@@ -41,7 +41,7 @@
       opacity: 0.3;
     }
   }
-  
+
   &:focus ~ .checkbox-field__label {
     &::before {
       outline:  1px solid #a5c7fe;
