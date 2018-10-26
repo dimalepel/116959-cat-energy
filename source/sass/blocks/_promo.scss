@@ -52,11 +52,13 @@
   margin-top: 24px;
   margin-bottom: 45px;
   font-size: 14px;
+  line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+    line-height: 20px;
     color: #111111;
   }
 
@@ -99,6 +101,7 @@
     padding: 17px 28px 17px 25px;
     margin-left: 89px;
     font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {

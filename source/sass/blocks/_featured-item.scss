@@ -47,6 +47,13 @@
   }
 }
 
+.featured-item__counter {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
 .featured-item__info {
   display: flex;
   justify-content: space-between;
