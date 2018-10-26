@@ -20,14 +20,6 @@
     line-height: 36px;
   }
 
-  &--desc {
-    display: block;
-
-    @media (min-width: $tablet-width) {
-      display: inline;
-    }
-  }
-
   &::after,
   &::before {
     content: "";
@@ -46,5 +38,13 @@
       right: 100%;
       margin-right: 40px;
     }
+  }
+}
+
+.subtitle__desc {
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
   }
 }
