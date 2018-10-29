@@ -1,16 +1,18 @@
 .catalog__list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-start;
+    width: calc(100% + 80px);
+    margin-left: -80px;
   }
 }
 
@@ -33,8 +35,10 @@
 }
 
 .catalog__item {
+  width: 100%;
   padding: 0 20px 22px 20px;
   border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     width: calc(50% - 30px);
@@ -46,13 +50,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: calc((100% - 80px*3) / 4);
-    margin-right: 80px;
+    width: calc((100% - 80px*4) / 4);
+    margin-left: 80px;
     margin-bottom: 32px;
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
   }
 }
 
